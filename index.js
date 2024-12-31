@@ -44,7 +44,7 @@ function calculateAge() {
 
   document.getElementById(
     "daysLeft"
-  ).innerText = ` ${daysLeft} days (${monthsLeft} months and ${remainingDays} days) left until the end of the 2024 year.`;
+  ).innerText = ` ${daysLeft} days (${monthsLeft} months and ${remainingDays} days) left until the end of the 2025 year.`;
 }
 
 calculateAge();
