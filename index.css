@@ -22,3 +22,24 @@ button {
     padding: 10px 15px;
     margin-top: 10px;
 }
+
+.progress-container {
+    width: 100%;
+    background: #eee;
+    border-radius: 8px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+#progressText {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
