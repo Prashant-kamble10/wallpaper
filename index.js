@@ -69,6 +69,13 @@ function calculateAge() {
   const progressTextEl = document.getElementById("progressText");
   if (progressTextEl) progressTextEl.innerText = progressText;
   if (progressBar) progressBar.style.width = `${approxRounded}%`;
+
+  // Calculate days left until April 6, 2026
+  const targetDate = new Date(2026, 3, 6); // Month is 0-indexed, so 3 = April
+  const timeDiffTo6Apr = targetDate - today;
+  const daysUntil6Apr = Math.ceil(timeDiffTo6Apr / (1000 * 60 * 60 * 24));
+  const el6Apr = document.getElementById("daysUntil6Apr");
+  if (el6Apr) el6Apr.innerText = daysUntil6Apr;
 }
 
 // Update once immediately and then every second so progress is live
